@@ -22,6 +22,10 @@ public abstract class Animal {
         this.speed = speed;
     }
 
+    public void fly(){
+        flyingType.fly();
+    }
+
     public void setFlyingType(Flys flyingType) {
         this.flyingType = flyingType;
     }
