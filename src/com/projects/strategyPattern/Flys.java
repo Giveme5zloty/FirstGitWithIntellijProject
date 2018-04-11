@@ -1,5 +1,5 @@
 package com.projects.strategyPattern;
 
-public interface Flys {
+interface Flys {
     void fly();
 }
