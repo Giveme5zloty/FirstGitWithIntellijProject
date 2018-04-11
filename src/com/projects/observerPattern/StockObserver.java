@@ -14,7 +14,8 @@ public class StockObserver implements Observer {
 
     public StockObserver(Subject subject) {
         this.subject = subject;
-        this.observerID = observerIDTracker++;
+        this.observerID = ++observerIDTracker;
+        subject.register(this);
     }
 
     @Override

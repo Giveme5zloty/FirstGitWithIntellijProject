@@ -12,7 +12,6 @@ public class Main {
 
         StockObserver observer1 = new StockObserver(stockGrabber);
 
-        stockGrabber.register(observer1);
 
         stockGrabber.setAaplPrice(123);
         stockGrabber.setIbmPrice(152);
