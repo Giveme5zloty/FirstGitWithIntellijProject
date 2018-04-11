@@ -23,4 +23,9 @@ public class StockObserver implements Observer {
         this.aaplPrice = aaplPrice;
         this.googPrice = googPrice;
     }
+
+    public void printThePrices(){
+        System.out.println(this.observerID + "\nIBM: " + this.ibmPrice +
+        "\nAAPL: " + this.ibmPrice + "\nGOOG: " + this.googPrice +"\n");
+    }
 }
