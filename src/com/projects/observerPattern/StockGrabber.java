@@ -24,22 +24,22 @@ public class StockGrabber implements Subject {
     }
 
     @Override
-    public void notifyOvservers() {
-        this.observers.forEach(observer->observer.update(this.ibmPrice,this.aaplPrice,this.googPrice));
+    public void notifyObservers() {
+        this.observers.forEach(observer->observer.update(this.ibmPrice, this.aaplPrice, this.googPrice));
     }
 
     public void setIbmPrice(double ibmPrice) {
         this.ibmPrice = ibmPrice;
-        notifyOvservers();
+        notifyObservers();
     }
 
     public void setAaplPrice(double aaplPrice) {
         this.aaplPrice = aaplPrice;
-        notifyOvservers();
+        notifyObservers();
     }
 
     public void setGoogPrice(double googPrice) {
         this.googPrice = googPrice;
-        notifyOvservers();
+        notifyObservers();
     }
 }
